@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "964893006676",
+    "project_id": "chefnest-b4345",
+    "storage_bucket": "chefnest-b4345.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964893006676:android:46c832cfdc5865f5bc46c1",
+        "android_client_info": {
+          "package_name": "com.sandul.chefnest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8_Sm0Stf5PMe60Mcbq8H0jm8WBYJGBD0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

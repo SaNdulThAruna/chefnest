@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/admin_dashboard" android:icon="@drawable/dashboard" android:title="Dashboard"/>
+    <item android:id="@+id/admin_user" android:icon="@drawable/user" android:title="User Management"/>
+    <item android:id="@+id/admin_seller" android:icon="@drawable/seller" android:title="Seller Management"/>
+    <item android:id="@+id/admin_cuisine" android:icon="@drawable/cuisine" android:title="Cuisine Management"/>
+    <item android:id="@+id/admin_dietary" android:icon="@drawable/food" android:title="Dietary Management"/>
+
+</menu>

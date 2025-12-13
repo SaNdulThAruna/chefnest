@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.sandul.chefnest.ui.customUI.RoundedImageView
+        android:id="@+id/cart_item_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/popular_item_cover"
+        android:clipToOutline="true"
+        android:outlineProvider="background"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cart_item_remove"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cart_item_img"
+        app:srcCompat="@drawable/close" />
+
+    <TextView
+        android:id="@+id/cart_item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/opensans_regular"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/cart_item_remove"
+        app:layout_constraintStart_toEndOf="@+id/cart_item_img"
+        app:layout_constraintTop_toTopOf="@+id/cart_item_img" />
+
+    <TextView
+        android:id="@+id/cart_item_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/opensans_regular"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/cart_item_title"
+        app:layout_constraintStart_toEndOf="@+id/cart_item_img"
+        app:layout_constraintTop_toBottomOf="@+id/cart_item_title" />
+
+    <ImageView
+        android:id="@+id/cart_item_minus"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="@+id/cart_item_img"
+        app:layout_constraintStart_toEndOf="@+id/cart_item_img"
+        app:layout_constraintTop_toBottomOf="@+id/cart_item_price"
+        app:srcCompat="@drawable/minus" />
+
+    <TextView
+        android:id="@+id/cart_item_qty"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cart_item_minus"
+        app:layout_constraintEnd_toStartOf="@+id/cart_item_plus"
+        app:layout_constraintStart_toEndOf="@+id/cart_item_minus"
+        app:layout_constraintTop_toTopOf="@+id/cart_item_minus" />
+
+    <ImageView
+        android:id="@+id/cart_item_plus"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="@+id/cart_item_qty"
+        app:layout_constraintStart_toEndOf="@+id/cart_item_qty"
+        app:layout_constraintTop_toTopOf="@+id/cart_item_qty"
+        app:srcCompat="@drawable/plus" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

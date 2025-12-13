@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="initial_values">
+        <item>2000</item>
+        <item>8000</item>
+    </array>
+</resources>
